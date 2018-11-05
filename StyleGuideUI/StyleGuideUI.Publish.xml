@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\MyProjects\Oryx\OryxAddOns Release\StyleGuide" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="images/ajax-loader.gif" publishTime="12/13/2012 10:21:04" />
+    <file relUrl="bin/_Library.dll" publishTime="12/20/2012 15:06:05" />
+    <file relUrl="styles/Search.css" publishTime="12/04/2012 13:06:16" />
+    <file relUrl="images/circle16.png" publishTime="11/20/2012 13:04:46" />
+    <file relUrl="UC/UcEntityTypeList.ascx" publishTime="12/16/2012 15:30:38" />
+    <file relUrl="bin/StyleGuide.pdb" publishTime="01/30/2013 18:54:08" />
+    <file relUrl="bin/StyleGuideUI.dll" publishTime="01/30/2013 18:54:08" />
+    <file relUrl="IgnoredWords/Backup of IgnoredWords.txt" publishTime="01/29/2013 11:51:10" />
+    <file relUrl="images/Add16.png" publishTime="12/04/2012 10:44:08" />
+    <file relUrl="images/right.png" publishTime="11/19/2012 10:30:54" />
+    <file relUrl="UC/UcFindReplaceArticleEntities.ascx" publishTime="01/30/2013 18:53:45" />
+    <file relUrl="styles/FindReplace.css" publishTime="12/13/2012 13:55:45" />
+    <file relUrl="images/Left.png" publishTime="11/19/2012 10:30:54" />
+    <file relUrl="ArticleFr.ashx" publishTime="01/30/2013 10:59:07" />
+    <file relUrl="images/delete16_3.png" publishTime="11/20/2012 18:39:44" />
+    <file relUrl="images/circle32.png" publishTime="11/20/2012 13:03:36" />
+    <file relUrl="images/NavBar_bg.gif" publishTime="12/04/2012 12:46:54" />
+    <file relUrl="UC/UcCategoryTypeList.ascx" publishTime="12/16/2012 15:41:32" />
+    <file relUrl="styles/default.css" publishTime="12/04/2012 19:31:28" />
+    <file relUrl="images/add.png" publishTime="11/18/2012 14:40:54" />
+    <file relUrl="Manage.aspx" publishTime="12/04/2012 19:16:30" />
+    <file relUrl="UC/UcEntityList.ascx" publishTime="01/30/2013 17:54:33" />
+    <file relUrl="images/Trash16.png" publishTime="12/04/2012 10:39:30" />
+    <file relUrl="images/Next.png" publishTime="12/04/2012 15:22:44" />
+    <file relUrl="default.aspx" publishTime="12/05/2012 09:45:02" />
+    <file relUrl="images/DeleteHS.png" publishTime="11/15/2012 14:58:29" />
+    <file relUrl="scripts/ArticleFr.js" publishTime="01/30/2013 18:49:34" />
+    <file relUrl="UC/UcSearch.ascx" publishTime="12/04/2012 19:24:48" />
+    <file relUrl="styles/jquery.superbox.css" publishTime="12/04/2012 10:34:32" />
+    <file relUrl="images/delete16_1.png" publishTime="11/20/2012 18:39:44" />
+    <file relUrl="images/loading3.gif" publishTime="12/04/2012 10:34:32" />
+    <file relUrl="images/delete16_2.png" publishTime="11/20/2012 18:39:44" />
+    <file relUrl="IgnoredWords/IgnoredWords.txt" publishTime="01/29/2013 12:09:37" />
+    <file relUrl="bin/StyleGuideUI.pdb" publishTime="01/30/2013 18:54:08" />
+    <file relUrl="bin/StyleGuide.dll" publishTime="01/30/2013 18:54:08" />
+    <file relUrl="scripts/common.js" publishTime="01/30/2013 15:12:39" />
+    <file relUrl="Web.config" publishTime="01/30/2013 18:54:19" />
+    <file relUrl="scripts/jquery-1.8.0.min.js" publishTime="12/09/2012 12:27:11" />
+    <file relUrl="images/close.png" publishTime="12/04/2012 10:34:32" />
+    <file relUrl="UC/UcCategoryList.ascx" publishTime="12/16/2012 15:41:35" />
+    <file relUrl="scripts/jquery.superbox.js" publishTime="12/04/2012 10:34:32" />
+    <file relUrl="UC/UcPaging.ascx" publishTime="12/04/2012 15:28:41" />
+    <file relUrl="images/Previous.png" publishTime="12/04/2012 15:22:44" />
+    <file relUrl="ArticleFr.aspx" publishTime="12/13/2012 15:04:53" />
+  </publishProfile>
+</publishData>

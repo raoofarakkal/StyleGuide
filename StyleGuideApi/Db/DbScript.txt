@@ -1,0 +1,163 @@
+﻿/****** Object:  Table [dbo].[EditorialStyleGuideCategory]    Script Date: 01/02/2013 16:03:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[EditorialStyleGuideCategory](
+	[ID] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](100) NOT NULL,
+	[Notes] [nvarchar](1000) NULL,
+	[CatTypeID] [numeric](18, 0) NOT NULL,
+	[LMDT] [datetime] NULL,
+	[LMBY] [nvarchar](50) NULL,
+ CONSTRAINT [PK_EditorialStyleGuideCategory] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Index [idxName]    Script Date: 01/02/2013 16:03:18 ******/
+CREATE UNIQUE NONCLUSTERED INDEX [idxName] ON [dbo].[EditorialStyleGuideCategory] 
+(
+	[Name] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[EditorialStyleGuideCategoryType]    Script Date: 01/02/2013 16:03:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[EditorialStyleGuideCategoryType](
+	[ID] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Type] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_EditorialStyleGuideCategoryType] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Index [idxType]    Script Date: 01/02/2013 16:03:18 ******/
+CREATE UNIQUE NONCLUSTERED INDEX [idxType] ON [dbo].[EditorialStyleGuideCategoryType] 
+(
+	[Type] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[EditorialStyleGuideEntity]    Script Date: 01/02/2013 16:03:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[EditorialStyleGuideEntity](
+	[ID] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](100) NOT NULL,
+	[Notes] [nvarchar](1000) NULL,
+	[Suspects] [nvarchar](1000) NOT NULL,
+	[Suggestions] [nvarchar](1000) NULL,
+	[EntTypeID] [numeric](18, 0) NOT NULL,
+	[LMDt] [datetime] NULL,
+	[LMBY] [nvarchar](50) NULL,
+ CONSTRAINT [PK_EditorialStyleGuideEntity] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Index [idxName]    Script Date: 01/02/2013 16:03:18 ******/
+CREATE UNIQUE NONCLUSTERED INDEX [idxName] ON [dbo].[EditorialStyleGuideEntity] 
+(
+	[Name] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[EditorialStyleGuideEntityCategories]    Script Date: 01/02/2013 16:03:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[EditorialStyleGuideEntityCategories](
+	[ID] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[EntID] [numeric](18, 0) NOT NULL,
+	[CatID] [numeric](18, 0) NOT NULL,
+ CONSTRAINT [PK_EditorialStyleGuideEntityCategories] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Index [idxEnt]    Script Date: 01/02/2013 16:03:18 ******/
+CREATE NONCLUSTERED INDEX [idxEnt] ON [dbo].[EditorialStyleGuideEntityCategories] 
+(
+	[EntID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[EditorialStyleGuideEntityType]    Script Date: 01/02/2013 16:03:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[EditorialStyleGuideEntityType](
+	[ID] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Type] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_EditorialStyleGuideEntityType] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Index [idxType]    Script Date: 01/02/2013 16:03:18 ******/
+CREATE UNIQUE NONCLUSTERED INDEX [idxType] ON [dbo].[EditorialStyleGuideEntityType] 
+(
+	[Type] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideCategory]  WITH CHECK ADD  CONSTRAINT [FK_EditorialStyleGuideCategory_EditorialStyleGuideCategoryType] FOREIGN KEY([CatTypeID])
+REFERENCES [dbo].[EditorialStyleGuideCategoryType] ([ID])
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideCategory] CHECK CONSTRAINT [FK_EditorialStyleGuideCategory_EditorialStyleGuideCategoryType]
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideEntityCategories]  WITH CHECK ADD  CONSTRAINT [FK_EditorialStyleGuideEntityCategories_EditorialStyleGuideCategory] FOREIGN KEY([CatID])
+REFERENCES [dbo].[EditorialStyleGuideCategory] ([ID])
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideEntityCategories] CHECK CONSTRAINT [FK_EditorialStyleGuideEntityCategories_EditorialStyleGuideCategory]
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideEntityCategories]  WITH CHECK ADD  CONSTRAINT [FK_EditorialStyleGuideEntityCategories_EditorialStyleGuideEntity] FOREIGN KEY([EntID])
+REFERENCES [dbo].[EditorialStyleGuideEntity] ([ID])
+GO
+
+ALTER TABLE [dbo].[EditorialStyleGuideEntityCategories] CHECK CONSTRAINT [FK_EditorialStyleGuideEntityCategories_EditorialStyleGuideEntity]
+GO
+
+

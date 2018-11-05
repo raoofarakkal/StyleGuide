@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FCA7709-044A-4A83-A370-F889139C3116}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StyleGuideUI</RootNamespace>
+    <AssemblyName>StyleGuideUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArticleFr.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="IgnoredWords\Backup of IgnoredWords.txt" />
+    <Content Include="IgnoredWords\IgnoredWords.txt" />
+    <Content Include="images\Add16.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\circle32.png" />
+    <Content Include="images\circle16.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\NavBar_bg.gif" />
+    <Content Include="images\delete16_1.png" />
+    <Content Include="images\delete16_2.png" />
+    <Content Include="images\delete16_3.png" />
+    <Content Include="images\loading3.gif" />
+    <Content Include="images\Next.png" />
+    <Content Include="images\Previous.png" />
+    <Content Include="images\Trash16.png" />
+    <Content Include="Manage.aspx" />
+    <Content Include="images\add.png" />
+    <Content Include="images\DeleteHS.png" />
+    <Content Include="images\Left.png" />
+    <Content Include="images\right.png" />
+    <Content Include="scripts\ArticleFr.js" />
+    <Content Include="scripts\common.js" />
+    <Content Include="scripts\jquery-1.8.0.min.js" />
+    <Content Include="scripts\jquery.superbox.js" />
+    <Content Include="styles\default.css" />
+    <Content Include="styles\FindReplace.css" />
+    <Content Include="styles\jquery.superbox.css" />
+    <Content Include="styles\Search.css" />
+    <Content Include="UC\UcCategoryList.ascx" />
+    <Content Include="UC\UcCategoryTypeList.ascx" />
+    <Content Include="UC\UcEntityList.ascx" />
+    <Content Include="UC\UcEntityTypeList.ascx" />
+    <Content Include="UC\UcFindReplaceArticleEntities.ascx" />
+    <Content Include="UC\UcPaging.ascx" />
+    <Content Include="UC\UcSearch.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\ArticleFr.cs" />
+    <Compile Include="App_Code\SgCommon.cs" />
+    <Compile Include="App_Code\webConfig.cs" />
+    <Compile Include="ArticleFr.ashx.cs">
+      <DependentUpon>ArticleFr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleFr.aspx.cs">
+      <DependentUpon>ArticleFr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleFr.aspx.designer.cs">
+      <DependentUpon>ArticleFr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UcCategoryList.ascx.cs">
+      <DependentUpon>UcCategoryList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcCategoryList.ascx.designer.cs">
+      <DependentUpon>UcCategoryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcCategoryTypeList.ascx.cs">
+      <DependentUpon>UcCategoryTypeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcCategoryTypeList.ascx.designer.cs">
+      <DependentUpon>UcCategoryTypeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcEntityList.ascx.cs">
+      <DependentUpon>UcEntityList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcEntityList.ascx.designer.cs">
+      <DependentUpon>UcEntityList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcEntityTypeList.ascx.cs">
+      <DependentUpon>UcEntityTypeList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcEntityTypeList.ascx.designer.cs">
+      <DependentUpon>UcEntityTypeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcFindReplaceArticleEntities.ascx.cs">
+      <DependentUpon>UcFindReplaceArticleEntities.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcFindReplaceArticleEntities.ascx.designer.cs">
+      <DependentUpon>UcFindReplaceArticleEntities.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcPaging.ascx.cs">
+      <DependentUpon>UcPaging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcPaging.ascx.designer.cs">
+      <DependentUpon>UcPaging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcSearch.ascx.cs">
+      <DependentUpon>UcSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcSearch.ascx.designer.cs">
+      <DependentUpon>UcSearch.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArticleFr.ashx" />
+    <None Include="Properties\PublishProfiles\StyleGuideRelease.pubxml" />
+    <None Include="Properties\PublishProfiles\TFSbs-StyleGuide.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Library\_Library1\_Library.vbproj">
+      <Project>{6a7b2c0f-7645-45e6-b4cf-322af9b8756d}</Project>
+      <Name>_Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StyleGuideApi\StyleGuide.csproj">
+      <Project>{096721b4-bdd9-4b28-aeb2-06f5e25454fa}</Project>
+      <Name>StyleGuide</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63942</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://OryxV4/StyleGuideUI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

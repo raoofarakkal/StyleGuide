@@ -1,0 +1,82 @@
+﻿.dvMain {
+    margin:0px;
+    width:800px;
+}
+
+.divFindPane_ArticleBody {
+    height:400px;
+}
+
+.divArticleBody {
+    width:400px;
+    overflow:auto;
+    border:1px solid #666666;
+    padding:5px;
+}
+
+.divFindPane {
+    width:372px; 
+    overflow:auto;
+    border:1px solid #666666;
+    font-size:11pt;
+    padding:5px;
+    font-family:Verdana;
+}
+
+.FindPaneData {
+    border:1px solid silver;
+    width:357px;
+    height:25px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.FindPaneData2 {
+    width:270px !important;
+}
+
+.FindPaneTitle {
+    font-weight:bold;
+    color:#666;
+
+}
+
+
+.Hspacer {
+    height:10px;
+}
+
+.ButtonMedium
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 30px;
+}
+.ButtonMedium:hover
+{
+    background-color: #FFFFFF;
+}
+
+.ToolButton {
+    width:113px !important;
+}
+
+.EntitesFound {
+    height:100px;
+    width:788px;
+    overflow:auto;
+    border:1px solid #666666;
+    padding:5px;
+    text-align:center;
+}
+
+.EntitesFoundItem {
+    border:1px solid #C3C3C3;
+    padding:5px;
+    margin:5px;
+    float:left;
+    background-color:#EEEEEE;
+}

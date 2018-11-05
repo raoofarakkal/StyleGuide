@@ -1,0 +1,128 @@
+﻿body {
+}
+
+.divMain
+{
+    font-family: Verdana;
+    font-size: 12px;
+    width: 990px;
+    padding: 0px;
+    background-color:White;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Button
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 30px;
+}
+.Button:hover
+{
+    background-color: #FFFFFF;
+}
+
+.ButtonMedium
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 30px;
+}
+.ButtonMedium:hover
+{
+    background-color: #FFFFFF;
+}
+
+.ButtonSmall
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 25px;
+}
+.ButtonSmall:hover
+{
+    background-color: #FFFFFF;
+}
+   
+h1 {
+    color:#4974B3;
+    text-transform:uppercase;
+}
+
+h2 {
+    color:#4974B3;
+    text-transform:capitalize;
+}
+
+.DataDiv
+{
+    padding-top:50px !important;
+}
+
+.DataDivManage
+{
+    padding-top:0px !important;
+}
+
+.NavBarHolder
+{
+    position: fixed;
+    left: 0px;
+    top: -18px !important;
+    z-index: 10000;
+    width: 100%;
+    background-color: #ECECEC;
+}
+.NavBar
+{
+    border:solid 1px gainsboro;
+    background-color:#6186BD;
+    background-image:url('../images/NavBar_bg.gif');
+    width:100%;
+    position: relative;
+    margin-top: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    height: 30px;
+    text-align:center;
+    padding-top:5px;
+
+}
+.NavBarElem
+{
+    color:White;
+    padding:5px;
+    margin:2px;
+    text-decoration:none;
+}
+.NavBarElem:hover
+{
+    color:Black;
+}
+
+.ManageNavBar
+{
+    position: fixed;
+    top: 0px !important;
+    z-index: 10000;
+    padding-top: 1px;
+    height:75px;
+    background-color:White;
+    text-align: right; 
+    width: 990px;
+    border-bottom:1px solid #c3cecc;
+}
+
+
+
